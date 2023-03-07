@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background1"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/start"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:backgroundTint="#000000"
+        android:onClick="startGame"
+        android:text="TIME TO BE A  [BIG SHOT]"
+        android:textColor="#FFFFFF"
+        android:textSize="32sp" />
+
+    <RadioGroup
+        android:id="@+id/RG"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/Easy"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:buttonTint="#FF0000"
+            android:text="Easy"
+            android:textColorHighlight="#FF0000"
+            android:textColorLink="#FF0000"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/Normal"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:buttonTint="#FF0000"
+            android:text="Normal"
+            android:textColorHighlight="#FF0000"
+            android:textColorLink="#FF0000"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/Hard"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:buttonTint="#FF0000"
+            android:text="Hard"
+            android:textColorHighlight="#FF0000"
+            android:textColorLink="#FF0000"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/Disk"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:buttonTint="#FF0000"
+            android:text="A Loaded Disk ?"
+            android:textColor="#FFD700"
+            android:textSize="28sp"
+            android:textStyle="italic"
+            android:visibility="gone" />
+    </RadioGroup>
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/spamtoncar"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/spamton_car" />
+
+
+</LinearLayout>

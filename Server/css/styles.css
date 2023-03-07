@@ -1,0 +1,70 @@
+body {
+    font-size: 24px;
+    text-align: center;    
+}
+
+h1{
+    background-color: black;
+    color: white;
+    padding: 50px;
+    margin-top: 0;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+table {
+    border: 5px solid black;
+    border-collapse: collapse;
+}
+
+th {
+    background-color: black;
+    color: white;
+}
+
+tr{
+    border-bottom: 3px solid black;
+    background-color: rgb(240, 240, 240);    
+}
+
+tr:hover{
+    background-color: silver;
+    font-size: larger;  
+}
+
+td{
+    padding: 20px;    
+}
+
+
+
+
+
+tr:nth-child(-n+6){
+    background-color:#69C;
+}
+
+tr:nth-child(2){
+	background-color:lightcoral;
+    animation: blink 1.5s ease-in-out infinite alternate;
+    color: gold;
+	}
+
+
+
+@keyframes blink {
+    0%,
+    100% {
+      text-shadow: 0 0 10px goldenrod, 0 0 10px goldenrod, 0 0 10px goldenrod;
+    }
+    50% {
+      text-shadow: 0 0 10px goldenrod, 0 0 10px goldenrod, 0 0 10px goldenrod;
+      color:yellow;
+    }
+  }
+
+
